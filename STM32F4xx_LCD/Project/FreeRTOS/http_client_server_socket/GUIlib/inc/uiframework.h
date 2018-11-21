@@ -58,20 +58,23 @@ void Create_DosingTestStartStartScreen(void);
 void Create_DosingTestStopStartScreen(void);
 void Create_DosingTestStopStopScreen(void);
 void Create_DosingTestStartStopScreen(void);
-void Create_ParametersPoolScreen(void);
-
+void Create_ParametersScreen(void);
+void Create_ParametersPoolVolumeScreen(void);
+void Create_ParametersFitrationPeriodScreen(void);
+void Create_ParametersWaterScreen(void);
 
 /*Show Screen*/
 void Show_HomeScreen(void);
 void Show_StartScreen(void);
 void Show_SettingsScreen(void);
-/*Show DosingTest Screen*/
 void Show_DosingTestStartStartScreen(void);
 void Show_DosingTestStopStartScreen(void);
 void Show_DosingTestStopStopScreen(void);
 void Show_DosingTestStartStopScreen(void);
 void Show_ParametersScreen(void);
 void Show_ParametersPoolVolumeScreen(void);
+void Show_ParametersFitrationPeriodScreen(void);
+void Show_ParametersWaterScreen(void);
 
 #ifdef __cplusplus
 }

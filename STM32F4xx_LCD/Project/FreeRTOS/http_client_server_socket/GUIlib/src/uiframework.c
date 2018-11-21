@@ -535,6 +535,157 @@ void Show_ParametersPoolVolumeScreen(void)
 	ParametersPoolVolumeScreen.ShowPage(&ParametersPoolVolumeScreen,GL_TRUE);
 	CurrentScreen = &ParametersPoolVolumeScreen;
 }
+
+
+
+/*Giao dien tu thiet ke*/
+GL_Page_TypeDef ParametersFitrationPeriodScreen;
+void Create_ParametersFitrationPeriodScreen(void)
+{
+	GL_PageControls_TypeDef* DesignButton01= NewRectControl(1,210,30,ParametersFitrationPeriodScreen_Back);
+	GL_PageControls_TypeDef* DesignButton02= NewRectControl(2,210,30,ParametersFitrationPeriodScreen_BackToStart);
+	GL_PageControls_TypeDef* DesignButton03= NewRectControl(3,100,60,ParametersFitrationPeriodScreen_inc);
+	GL_PageControls_TypeDef* DesignButton04= NewRectControl(4,100,60,ParametersFitrationPeriodScreen_dec);
+	GL_PageControls_TypeDef* DesignButton05= NewRectControl(5,210,60,ParametersFitrationPeriodScreen_OK);
+	GL_PageControls_TypeDef* DesignButton06= NewRectControl(6,210,100,ParametersFitrationPeriodScreen_PoolVolume);
+	Create_PageObj( &ParametersFitrationPeriodScreen ); 
+	AddPageControlObj(250,240,DesignButton01,&ParametersFitrationPeriodScreen);
+	AddPageControlObj(20,240,DesignButton02,&ParametersFitrationPeriodScreen);
+	AddPageControlObj(20,170,DesignButton03,&ParametersFitrationPeriodScreen);
+	AddPageControlObj(130,170,DesignButton04,&ParametersFitrationPeriodScreen);
+	AddPageControlObj(250,170,DesignButton05,&ParametersFitrationPeriodScreen);
+	AddPageControlObj(20,60,DesignButton06,&ParametersFitrationPeriodScreen);	
+}
+////////////////////////////////////////
+void Show_ParametersFitrationPeriodScreen(void)
+{
+	UARTprintf("Create_ParametersFitrationPeriodScreen\r\n");
+	Create_ParametersFitrationPeriodScreen();
+	LCD_Clear(BLACK);
+	LCD_DrawFullRect(20,12,90,28,WHITE);
+	LCD_SetFont(&Font16x24);
+	LCD_SetColors(BLACK,WHITE);
+	LCD_DisplayStringLine(14,20,(uint8_t *)"TITLE");
+	LCD_SetColors(WHITE,BLACK);
+	LCD_SetFont(&Font12x12);
+	LCD_DisplayStringLine(20,290,(uint8_t *)"POOL PARAMETERS");
+	LCD_DrawFullRect(20,60,210,100,VU_GRAY);
+	LCD_DrawFullRect(250,60,210,100,VU_ORANGE);
+	LCD_SetColors(WHITE,VU_GRAY);
+	LCD_SetFont(&Font16x24);
+	LCD_DisplayStringLine(120,100,(uint8_t *)"15");
+	LCD_SetFont(&Font12x12);
+	LCD_DisplayStringLine(70,30,(uint8_t *)"POOL VOLUME");
+	LCD_DisplayStringLine(127,155,(uint8_t *)"m3");
+	LCD_SetColors(WHITE,VU_ORANGE);
+	LCD_SetFont(&Font16x24);
+	LCD_DisplayStringLine(120,330,(uint8_t *)"06");
+	LCD_SetFont(&Font12x12);
+	LCD_DisplayStringLine(70,255,(uint8_t *)"FILTRATION PERIOD");
+	LCD_DisplayStringLine(127,385,(uint8_t *)"h");
+	LCD_DrawFullRect(20,240,210,30,WHITE);
+	LCD_DrawFullRect(250,240,210,30,WHITE);
+	LCD_SetTextColor(WHITE);
+	LCD_DrawRect(20,170,60,100);
+	LCD_DrawRect(130,170,60,100);
+	LCD_DrawRect(250,170,60,210);
+	LCD_SetFont(&Font16x24);
+	LCD_SetColors(WHITE,BLACK);
+	LCD_DisplayStringLineInRect(20,170,100,60,(uint8_t *)"+");
+	LCD_DisplayStringLineInRect(130,170,100,60,(uint8_t *)"-");
+	LCD_SetFont(&Font12x12);
+	LCD_DisplayStringLineInRect(250,170,210,60,(uint8_t *)"OK");
+	LCD_SetColors(BLACK,WHITE);
+	LCD_DisplayStringLineInRect(250,240,210,30,(uint8_t *)"BACK");
+	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");	
+	LCD_SetColors(BLACK,WHITE);
+	ParametersFitrationPeriodScreen.ShowPage(&ParametersFitrationPeriodScreen,GL_TRUE);
+	CurrentScreen = &ParametersFitrationPeriodScreen;
+}
+
+
+
+
+/*Giao dien tu thiet ke*/
+GL_Page_TypeDef ParametersWaterScreen;
+void Create_ParametersWaterScreen(void)
+{
+	GL_RadioButtonGrp_TypeDef* Pool=NewRadioButtonGrp(1);
+	GL_RadioButtonGrp_TypeDef* AverageWaterTemperature= NewRadioButtonGrp(2);
+	GL_RadioButtonGrp_TypeDef* WaterHardness=NewRadioButtonGrp(3);
+	GL_PageControls_TypeDef* DesignButton01= NewRectControl(4,210,30,ParametersWaterScreen_Back);
+	GL_PageControls_TypeDef* DesignButton02= NewRectControl(5,210,30,ParametersWaterScreen_BackToStart);
+	GL_PageControls_TypeDef* CheckBoxIndoor= RADIO_BUTTON_ADD(Pool,(const uint8_t *)"",ParametersWaterScreen_Indoor);
+	GL_PageControls_TypeDef* CheckBoxOutdoor= RADIO_BUTTON_ADD(Pool,(const uint8_t *)"",ParametersWaterScreen_Outdoor);
+	GL_PageControls_TypeDef* CheckBoxExtremeConditions= RADIO_BUTTON_ADD(Pool,(const uint8_t *)"",ParametersWaterScreen_ExtremeCondition);
+	GL_PageControls_TypeDef* CheckBoxLess20oC= RADIO_BUTTON_ADD(AverageWaterTemperature,(const uint8_t *)"",ParametersWaterScreen_Less20oC);
+	GL_PageControls_TypeDef* CheckBox20oC_30oC= RADIO_BUTTON_ADD(AverageWaterTemperature,(const uint8_t *)"",ParametersWaterScreen_20oC_30oC);
+	GL_PageControls_TypeDef* CheckBoxMore30oC= RADIO_BUTTON_ADD(AverageWaterTemperature,(const uint8_t *)"",ParametersWaterScreen_More30oC);
+	GL_PageControls_TypeDef* CheckBoxSoft= RADIO_BUTTON_ADD(WaterHardness,(const uint8_t *)"",ParametersWaterScreen_Soft);
+	GL_PageControls_TypeDef* CheckBoxHard= RADIO_BUTTON_ADD(WaterHardness,(const uint8_t *)"",ParametersWaterScreen_Hard);
+	GL_PageControls_TypeDef* CheckBoxVeryHard= RADIO_BUTTON_ADD(WaterHardness,(const uint8_t *)"",ParametersWaterScreen_VeryHard);
+	Create_PageObj( &ParametersWaterScreen ); 
+	AddPageControlObj(250,240,DesignButton01,&ParametersWaterScreen);
+	AddPageControlObj(20,240,DesignButton02,&ParametersWaterScreen);
+	AddPageControlObj(270,85,CheckBoxIndoor,&ParametersWaterScreen);
+	AddPageControlObj(340,85,CheckBoxOutdoor,&ParametersWaterScreen);
+	AddPageControlObj(410,85,CheckBoxExtremeConditions,&ParametersWaterScreen);
+	AddPageControlObj(270,140,CheckBoxLess20oC,&ParametersWaterScreen);	
+	AddPageControlObj(340,140,CheckBox20oC_30oC,&ParametersWaterScreen);
+	AddPageControlObj(410,140,CheckBoxMore30oC,&ParametersWaterScreen);
+	AddPageControlObj(270,205,CheckBoxSoft,&ParametersWaterScreen);
+	AddPageControlObj(340,205,CheckBoxHard,&ParametersWaterScreen);
+	AddPageControlObj(410,205,CheckBoxVeryHard,&ParametersWaterScreen);
+//	GL_RadioOption_TypeDef* pTmp = (GL_RadioOption_TypeDef*)(ParametersWaterScreen);
+//	pTmp->IsChecked = GL_TRUE;
+//	(Pool->RadioOptionCount) = 0;
+
+//	((GL_RadioOption_TypeDef*)(Pool->RadioOptions[2]->objPTR))->IsChecked = GL_TRUE;
+}
+////////////////////////////////////////
+void Show_ParametersWaterScreen(void)
+{
+	UARTprintf("Create_ParametersWaterScreen\r\n");
+	Create_ParametersWaterScreen();
+	LCD_Clear(BLACK);
+	LCD_DrawFullRect(20,12,90,28,WHITE);
+	LCD_SetFont(&Font16x24);
+	LCD_SetColors(BLACK,WHITE);
+	LCD_DisplayStringLine(14,20,(uint8_t *)"TITLE");
+	LCD_SetColors(WHITE,BLACK);
+	LCD_SetFont(&Font12x12);
+	LCD_DisplayStringLine(20,280,(uint8_t *)"WATER PARAMETERS");
+	LCD_SetFont(&Font8x12_bold);
+	LCD_DisplayStringLine(55,30,(uint8_t *)"POOL");
+	LCD_DisplayStringLine(120,30,(uint8_t *)"AVERAGE");
+	LCD_DisplayStringLine(135,30,(uint8_t *)"WATER");
+	LCD_DisplayStringLine(150,30,(uint8_t *)"TEMPERATURE");
+	LCD_DisplayStringLine(185,30,(uint8_t *)"WATER");
+	LCD_DisplayStringLine(200,30,(uint8_t *)"HARDNESS");
+	LCD_SetFont(&Font8x8);
+	LCD_DisplayStringLine(55,255,(uint8_t *)"indoor");
+	LCD_DisplayStringLine(55,320,(uint8_t *)"outdoor");
+	LCD_DisplayStringLine(120,255,(uint8_t *)"< 20oC");
+	LCD_DisplayStringLine(120,320,(uint8_t *)"20-30oC");
+	LCD_DisplayStringLine(120,395,(uint8_t *)"> 30oC");
+	LCD_DisplayStringLine(185,265,(uint8_t *)"soft");
+	LCD_DisplayStringLine(185,335,(uint8_t *)"hard");
+	LCD_DisplayStringLine(185,385,(uint8_t *)"very hard");
+	LCD_SetTextColor(BRIGHTRED);
+	LCD_DisplayStringLine(55,390,(uint8_t *)"extreme");
+	LCD_DisplayStringLine(70,385,(uint8_t *)"condition");
+	LCD_DrawFullRect(20,240,210,30,WHITE);
+	LCD_DrawFullRect(250,240,210,30,WHITE);
+	LCD_SetColors(BLACK,WHITE);
+	LCD_DisplayStringLineInRect(250,240,210,30,(uint8_t *)"BACK");
+	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");	
+	LCD_SetColors(BLACK,WHITE);
+	ParametersWaterScreen.ShowPage(&ParametersWaterScreen,GL_TRUE);
+	CurrentScreen = &ParametersWaterScreen;
+}
+
+
+
 /******************* (C) COPYRIGHT 2017 STMicroelectronics *****END OF FILE****/ 
 /*Added by chau phuoc vu 14/11/2018*/
 void DelayScreen_Decrement(void)

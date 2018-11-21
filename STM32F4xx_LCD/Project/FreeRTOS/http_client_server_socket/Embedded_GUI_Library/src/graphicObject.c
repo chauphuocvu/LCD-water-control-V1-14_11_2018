@@ -616,7 +616,6 @@ GL_PageControls_TypeDef* AddRadioOption (GL_RadioButtonGrp_TypeDef* pThis, const
       {
         ((GL_RadioOption_TypeDef*)(pThis->RadioOptions[0]->objPTR))->IsChecked = GL_TRUE;
       }
-
     }
     else
     {

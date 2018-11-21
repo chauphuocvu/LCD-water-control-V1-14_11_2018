@@ -21,6 +21,7 @@
 #include "uiframework.h"
 #include "uiappuser.h"
 #include "LcdHal.h"
+#include "stm32f4xx_uartstdio.h"
 /** @addtogroup Embedded_GUI_Example
   * @{
   */
@@ -40,8 +41,8 @@ DosingTest DosingTest_Flag = StartStart;
 /*Start Screen */
 void StartScreen_Setting(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_SettingsScreen();
-	DestroyPage(&StartScreen);
 }
 /*Settings Screen */
 void SettingsScreen_Language(void)
@@ -50,14 +51,14 @@ void SettingsScreen_Language(void)
 ////////////////////////////////////////////////////////////
 void SettingsScreen_BackToStart(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
-	DestroyPage(&SettingsScreen);
 }
 //////////////////////////////////////////////////////////////
 void SettingsScreen_Parameters(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_ParametersScreen();
-	DestroyPage(&SettingsScreen);
 }
 //////////////////////////////////////////////////////////////
 void SettingsScreen_Calibration(void)
@@ -69,20 +70,20 @@ void SettingsScreen_DosingTest(void)
 	switch (DosingTest_Flag)
 	{
 		case StartStart:
-			Show_DosingTestStartStartScreen();	
-			DestroyPage(&SettingsScreen);		
+			DestroyPage(CurrentScreen);
+			Show_DosingTestStartStartScreen();		
 		break;
 		case StartStop:
+			DestroyPage(CurrentScreen);
 			Show_DosingTestStartStopScreen();		
-			DestroyPage(&SettingsScreen);
 		break;
-		case StopStart:			
+		case StopStart:
+			DestroyPage(CurrentScreen);			
 			Show_DosingTestStopStartScreen();	
-			DestroyPage(&SettingsScreen);
 		break;
 		case StopStop :
+			DestroyPage(CurrentScreen);
 			Show_DosingTestStopStopScreen();	
-			DestroyPage(&SettingsScreen);
 		break;
 	}	
 }
@@ -98,108 +99,106 @@ void SettingsScreen_TypeOfProbe(void)
 /*DosingTest Screen */
 void DosingTestStartStartScreen_Back(void)
 {
-	
+	DestroyPage(CurrentScreen);
 	Show_SettingsScreen();
 	DosingTest_Flag = StartStart;
-	DestroyPage(&DosingTestStartStartScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStartStartScreen_BackToStart(void)
 {
-	
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
 	DosingTest_Flag = StartStart;
-	DestroyPage(&DosingTestStartStartScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStartStartScreen_StartDisinf(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStopStartScreen();
-	DestroyPage(&DosingTestStartStartScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStartStartScreen_StartPh(void)
 {	
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStartStopScreen();
-	DestroyPage(&DosingTestStartStartScreen);
 }
 /*DosingTestStopStart Screen */
 void DosingTestStopStartScreen_Back(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_SettingsScreen();
 	DosingTest_Flag = StopStart;
-	DestroyPage(&DosingTestStopStartScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStopStartScreen_BackToStart(void)
 {	
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
 	DosingTest_Flag = StartStart;
-	DestroyPage(&DosingTestStopStartScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStopStartScreen_StopDisinf(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStartStartScreen();
-	DestroyPage(&DosingTestStopStartScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStopStartScreen_StartPh(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStopStopScreen();
-	DestroyPage(&DosingTestStopStartScreen);
 }
 /*DosingTestStopStop Screen */
 void DosingTestStopStopScreen_Back(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_SettingsScreen();
 	DosingTest_Flag = StopStop;
-	DestroyPage(&DosingTestStopStopScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStopStopScreen_BackToStart(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
 	DosingTest_Flag = StartStart;
-	DestroyPage(&DosingTestStopStopScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStopStopScreen_StopDisinf(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStartStopScreen();
-	DestroyPage(&DosingTestStopStopScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStopStopScreen_StopPh(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStopStartScreen();
-	DestroyPage(&DosingTestStopStopScreen);
 }
 /*DosingTestStartStop Screen */
 void DosingTestStartStopScreen_Back(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_SettingsScreen();
 	DosingTest_Flag = StartStop;
-	DestroyPage(&DosingTestStartStopScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStartStopScreen_BackToStart(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
 	DosingTest_Flag = StartStart;
-	DestroyPage(&DosingTestStartStopScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStartStopScreen_StartDisinf(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStopStartScreen();
-	DestroyPage(&DosingTestStartStopScreen);
 }
 //////////////////////////////////////////////////////////////
 void DosingTestStartStopScreen_StopPh(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_DosingTestStartStartScreen();
-	DestroyPage(&DosingTestStartStopScreen);
 }
 
 
@@ -212,24 +211,26 @@ void DosingTestStartStopScreen_StopPh(void)
 /*Parameters Screen */
 void ParametersScreen_Back(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_SettingsScreen();
-	DestroyPage(&ParametersScreen);
 }
 ////////////////////////////////////////////////////////////
 void ParametersScreen_BackToStart(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
-	DestroyPage(&ParametersScreen);
 }
 //////////////////////////////////////////////////////////////
 void ParametersScreen_Pool(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_ParametersPoolVolumeScreen();
-	DestroyPage(&ParametersScreen);
 }
 //////////////////////////////////////////////////////////////
 void ParametersScreen_Water(void)
 {
+	DestroyPage(CurrentScreen);
+	Show_ParametersWaterScreen();
 }
 
 
@@ -238,14 +239,14 @@ void ParametersScreen_Water(void)
 /*ParametersPoolVolumePool Screen */
 void ParametersPoolVolumeScreen_Back(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_ParametersScreen();
-	DestroyPage(&ParametersPoolVolumeScreen);
 }
 //////////////////////////////////////////////////////////////
 void ParametersPoolVolumeScreen_BackToStart(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
-	DestroyPage(&ParametersPoolVolumeScreen);
 }
 //////////////////////////////////////////////////////////////
 void ParametersPoolVolumeScreen_inc(void)
@@ -262,6 +263,8 @@ void ParametersPoolVolumeScreen_OK(void)
 //////////////////////////////////////////////////////////////
 void ParametersPoolVolumeScreen_FiltrationPeriod(void)
 {
+	DestroyPage(CurrentScreen);
+	Show_ParametersFitrationPeriodScreen();
 }
 
 
@@ -269,24 +272,91 @@ void ParametersPoolVolumeScreen_FiltrationPeriod(void)
 /*ParametersFitrationPeriod Screen */
 void ParametersFitrationPeriodScreen_Back(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_ParametersScreen();
-	DestroyPage(&ParametersFitrationPeriodScreen);
 }
 ///////////////////////////////////////////////////////////////
 void ParametersFitrationPeriodScreen_BackToStart(void)
 {
+	DestroyPage(CurrentScreen);
 	Show_StartScreen();
-	DestroyPage(&ParametersFitrationPeriodScreen);
 }
 //////////////////////////////////////////////////////////////////
 void ParametersFitrationPeriodScreen_inc(void)
-{}
+{
+}
 	///////////////////////////////////////////////////////////////
 void ParametersFitrationPeriodScreen_dec(void)
-{}
+{
+}
 	//////////////////////////////////////////////////////////////
 void ParametersFitrationPeriodScreen_OK(void)
-{}
+{
+}
 	//////////////////////////////////////////////////////////////
 void ParametersFitrationPeriodScreen_PoolVolume(void)
-{}
+{
+	DestroyPage(CurrentScreen);
+	Show_ParametersPoolVolumeScreen();
+}
+
+
+
+
+/*ParametersWaterScreen */
+void ParametersWaterScreen_Back(void)
+{
+	DestroyPage(CurrentScreen);
+	Show_ParametersScreen();
+}
+///////////////////////////////////////////////////////////////
+void ParametersWaterScreen_BackToStart(void)
+{
+	DestroyPage(CurrentScreen);
+	Show_StartScreen();
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_Indoor(void)
+{
+	UARTprintf("ParametersWaterScreen_Indoor\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_Outdoor(void)
+{
+	UARTprintf("ParametersWaterScreen_Outdoor\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_ExtremeCondition(void)
+{
+	UARTprintf("ParametersWaterScreen_ExtremeCondition\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_Less20oC(void)
+{
+	UARTprintf("ParametersWaterScreen_Less20oC\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_20oC_30oC(void)
+{
+	UARTprintf("ParametersWaterScreen_20oC_30oC\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_More30oC(void)
+{
+	UARTprintf("ParametersWaterScreen_More30oC\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_Soft(void)
+{
+	UARTprintf("ParametersWaterScreen_Soft\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_Hard(void)
+{
+	UARTprintf("ParametersWaterScreen_Hard\r\n");
+}
+//////////////////////////////////////////////////////////////////
+void ParametersWaterScreen_VeryHard(void)
+{
+	UARTprintf("ParametersWaterScreen_VeryHard\r\n");
+}

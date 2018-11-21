@@ -103,6 +103,18 @@ void ParametersFitrationPeriodScreen_dec(void);
 void ParametersFitrationPeriodScreen_OK(void);
 void ParametersFitrationPeriodScreen_PoolVolume(void);
 
+/*ParametersWaterScreen */
+void ParametersWaterScreen_Back(void);
+void ParametersWaterScreen_BackToStart(void);
+void ParametersWaterScreen_Indoor(void);
+void ParametersWaterScreen_Outdoor(void);
+void ParametersWaterScreen_ExtremeCondition(void);
+void ParametersWaterScreen_Less20oC(void);
+void ParametersWaterScreen_20oC_30oC(void);
+void ParametersWaterScreen_More30oC(void);
+void ParametersWaterScreen_Soft(void);
+void ParametersWaterScreen_Hard(void);
+void ParametersWaterScreen_VeryHard(void);
 #ifdef __cplusplus
 }
 #endif
