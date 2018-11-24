@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Discover-More\Project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Discover-More\Project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Nov 23 17:09:50 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Nov 24 13:03:43 2018
 <BR><P>
 <H3>Maximum Stack Usage =        712 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1530,7 +1530,7 @@ Global Symbols
 <LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
 
-<P><STRONG><a name="[142]"></a>NewHistogram</STRONG> (Thumb, 138 bytes, Stack size 32 bytes, graphicobject.o(.text), UNUSED)
+<P><STRONG><a name="[142]"></a>NewHistogram</STRONG> (Thumb, 146 bytes, Stack size 32 bytes, graphicobject.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Create_Histogram
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetStringFieldValue
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
@@ -1538,7 +1538,7 @@ Global Symbols
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 
-<P><STRONG><a name="[145]"></a>NewGraphChart</STRONG> (Thumb, 144 bytes, Stack size 40 bytes, graphicobject.o(.text), UNUSED)
+<P><STRONG><a name="[145]"></a>NewGraphChart</STRONG> (Thumb, 152 bytes, Stack size 40 bytes, graphicobject.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Create_GraphChart
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetStringFieldValue
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
@@ -1661,17 +1661,17 @@ Global Symbols
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SettingsScreen_DosingTest
 </UL>
 
-<P><STRONG><a name="[15b]"></a>SetGraphChartPoints</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, graphicobject.o(.text), UNUSED)
+<P><STRONG><a name="[15b]"></a>SetGraphChartPoints</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, graphicobject.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 
-<P><STRONG><a name="[15c]"></a>SetHistogramPoints</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, graphicobject.o(.text), UNUSED)
+<P><STRONG><a name="[15c]"></a>SetHistogramPoints</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, graphicobject.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 
 <P><STRONG><a name="[29e]"></a>GetComboOptionActive</STRONG> (Thumb, 92 bytes, Stack size 12 bytes, graphicobject.o(.text), UNUSED)
 
-<P><STRONG><a name="[29f]"></a>ResetComboOptionActive</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, graphicobject.o(.text), UNUSED)
+<P><STRONG><a name="[29f]"></a>ResetComboOptionActive</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, graphicobject.o(.text), UNUSED)
 
 <P><STRONG><a name="[2a0]"></a>GetComboOptionLabel</STRONG> (Thumb, 98 bytes, Stack size 12 bytes, graphicobject.o(.text), UNUSED)
 
@@ -1744,7 +1744,7 @@ Global Symbols
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Create_StartScreen
 </UL>
 
-<P><STRONG><a name="[cf]"></a>TimeOutCalculate</STRONG> (Thumb, 226 bytes, Stack size 8 bytes, graphicobject.o(.text))
+<P><STRONG><a name="[cf]"></a>TimeOutCalculate</STRONG> (Thumb, 224 bytes, Stack size 8 bytes, graphicobject.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TimeOutCalculate &rArr; GL_BackLightSwitch
 </UL>
 <BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_BackLightSwitch
@@ -4835,6 +4835,7 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_DrawLine
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSlidebarVisible
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetNewRectControlVisible
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_DrawFilledRectangle
 </UL>
 
@@ -4929,12 +4930,13 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NewGraphChart
 </UL>
 
-<P><STRONG><a name="[a0]"></a>SetNewRectControlVisible</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, graphicobject.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = SetNewRectControlVisible &rArr; UARTprintf &rArr; __aeabi_d2f
+<P><STRONG><a name="[a0]"></a>SetNewRectControlVisible</STRONG> (Thumb, 138 bytes, Stack size 32 bytes, graphicobject.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = SetNewRectControlVisible &rArr; UARTprintf &rArr; __aeabi_d2f
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetTextColor
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetFont
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetBackColor
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_DrawRectangle
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> graphicobject.o(.text)

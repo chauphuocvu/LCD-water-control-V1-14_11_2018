@@ -22,8 +22,6 @@
 
 uint16_t	SaveHalfWordDataToFlash(uint32_t Address, uint16_t data)
 {
-	uint16_t i = 0;
-	
 	 FLASH_Unlock();
 	 /* Clear pending flags (if any) */  
   FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_OPERR | FLASH_FLAG_WRPERR | 

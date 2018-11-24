@@ -686,6 +686,6 @@ void DelayScreen_Decrement(void)
 }
 void DelayScreen(uint16_t time)
 {
-delayscreen = time;
+	delayscreen = time;
 	while(delayscreen != 0);
 }

@@ -282,7 +282,7 @@ void GL_DrawLine(uint16_t Xpos, uint16_t Ypos, uint16_t Length, uint8_t Directio
   * @param  Width: display rectangle width.
   * @retval None
   */
-void GL_LCD_DrawRect(uint8_t Xpos, uint16_t Ypos, uint8_t Height, uint16_t Width)
+void GL_LCD_DrawRect(uint16_t Xpos, uint16_t Ypos, uint16_t Height, uint16_t Width)
 {
 	LCD_DrawRect(Xpos, Ypos,  Width, Height);
 //  GL_DrawLine(Xpos, Ypos, Width, Horizontal);
@@ -299,7 +299,7 @@ void GL_LCD_DrawRect(uint8_t Xpos, uint16_t Ypos, uint8_t Height, uint16_t Width
   * @param  Radius: the radius size of the circle
   * @retval None
   */
-void GL_LCD_DrawCircle(uint8_t Xpos, uint16_t Ypos, uint16_t Radius)
+void GL_LCD_DrawCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius)
 {
 	LCD_DrawCircle(Xpos, Ypos, Radius);
 //  int32_t  D;/* Decision Variable */
@@ -568,7 +568,7 @@ uint16_t LCD_GetPixel(uint16_t Xpos, uint16_t Ypos)
   * @param  c: pointer to the character data.
   * @retval None
   */
-void GL_LCD_DrawChar(uint8_t Xpos, uint16_t Ypos, const uint16_t *c) /* 16bit char */
+void GL_LCD_DrawChar(uint16_t Xpos, uint16_t Ypos, const uint16_t *c) /* 16bit char */
 {
 //	LCD_DrawChar(Xpos, Ypos, (uint16_t*)c);
   uint32_t line_index = 0, pixel_index = 0;

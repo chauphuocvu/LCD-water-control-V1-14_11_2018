@@ -109,23 +109,23 @@ GL_PageControls_TypeDef* NewIcon (uint16_t ID, const uint8_t* Image_PTR,
                                   void (*pEventHandler)(void));
                                   
 GL_ErrStatus SetIconImage(GL_Page_TypeDef* pPage, uint16_t ID,
-                          const uint8_t* pImage, uint16_t Width, uint8_t Height);
+                          const uint8_t* pImage, uint16_t Width, uint16_t Height);
 
 /* Histogram handler **********************************************************/                                       
 GL_PageControls_TypeDef* NewHistogram (uint16_t ID, const uint8_t* labelX,
                                        const uint8_t* labelY, int16_t data_points[],
-                                       uint8_t n_points);
+                                       uint16_t n_points);
 
 GL_ErrStatus SetHistogramPoints( GL_Page_TypeDef* pPage, uint16_t ID,
-                                 int16_t data_points[], uint8_t n_points );
+                                 int16_t data_points[], uint16_t n_points );
 
 /* Graph handler **************************************************************/                                        
 GL_PageControls_TypeDef* NewGraphChart (uint16_t ID, const uint8_t* labelX,
                                         const uint8_t* labelY, int16_t data_points[],
-                                        uint8_t n_points, GL_bool Background );
+                                        uint16_t n_points, GL_bool Background );
 
 GL_ErrStatus SetGraphChartPoints( GL_Page_TypeDef* pPage, uint16_t ID,
-                                  int16_t data_points[], uint8_t n_points );
+                                  int16_t data_points[], uint16_t n_points );
 /* Radio Button handler *******************************************************/ 
 GL_RadioButtonGrp_TypeDef* NewRadioButtonGrp (uint16_t ID);
 

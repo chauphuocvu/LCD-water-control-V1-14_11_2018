@@ -82,7 +82,7 @@ void GPIO_Config(void);
 void MyTask(void * pvParameters);
 void vApplicationStackOverflowHook( TaskHandle_t xTask,
                                     signed char *pcTaskName );
-void DisplayArgument();
+void DisplayArgument(void);
 void CreateTask2(void * pvParameters);
 void vApplicationTickHook( void );
 uint16_t datar = 0;
@@ -158,7 +158,7 @@ void MyTask(void * pvParameters)
 		DisplayArgument();
   }
 }
-void DisplayArgument()
+void DisplayArgument(void)
 {
 		//UARTprintf("co chay Switch case\r\n");
 		switch(Screen)

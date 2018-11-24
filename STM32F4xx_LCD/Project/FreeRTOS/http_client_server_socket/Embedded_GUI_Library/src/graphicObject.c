@@ -159,7 +159,7 @@ static void SlidebarCursorPreDraw(GL_PageControls_TypeDef* pControl, GL_bool);
 static GL_ObjDimensions_TypeDef GetObjSize(GL_PageControls_TypeDef* pPageControl);
 static GL_Coordinate_TypeDef GetObjCoordinates(GL_Page_TypeDef* pPage, uint16_t ID);
 static GL_ErrStatus SetPage(GL_Page_TypeDef* pThis, GL_bool bVal);
-static void GL_DrawRectangle(uint16_t maxX, uint16_t minX, uint8_t maxY, uint8_t minY);
+static void GL_DrawRectangle(uint16_t maxX, uint16_t minX, uint16_t maxY, uint16_t minY);
 
 /**
   * @}
@@ -178,7 +178,7 @@ static void GL_DrawRectangle(uint16_t maxX, uint16_t minX, uint8_t maxY, uint8_t
   * @param  minY - Minimum Y coordinate
   * @retval None
   */
-static void GL_DrawRectangle(uint16_t maxX, uint16_t minX, uint8_t maxY, uint8_t minY)
+static void GL_DrawRectangle(uint16_t maxX, uint16_t minX, uint16_t maxY, uint16_t minY)
 {
   GL_DrawLine(minX, minY, maxX - minX, GL_Horizontal);
   GL_DrawLine(minX, maxY, maxX - minX, GL_Horizontal);
@@ -196,7 +196,7 @@ static void GL_DrawRectangle(uint16_t maxX, uint16_t minX, uint8_t maxY, uint8_t
   * @param  Color: The filling color
   * @retval None
   */
-static void GL_DrawFilledRectangle(uint16_t maxX, uint16_t minX, uint8_t maxY, uint8_t minY, uint16_t Color)
+static void GL_DrawFilledRectangle(uint16_t maxX, uint16_t minX, uint16_t maxY, uint16_t minY, uint16_t Color)
 {
   uint32_t counter = 0;
 	
@@ -230,7 +230,7 @@ static void GL_DrawFilledRectangle(uint16_t maxX, uint16_t minX, uint8_t maxY, u
   * @param  Color: specifies the filling color.
   * @retval None
   */
-void GL_DrawFilledCircle(uint16_t Xpos, uint8_t Ypos, uint16_t Radius, uint16_t Color)
+void GL_DrawFilledCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius, uint16_t Color)
 {
   uint32_t n = 2;
   GL_LCD_DrawCircle( Ypos - Radius, Xpos - Radius, Radius);
@@ -852,7 +852,7 @@ GL_PageControls_TypeDef* NewSlidebar (uint16_t ID, const uint8_t* label, GL_Dire
   * @param  n_points: Number of points to be plot
   * @retval GL_PageControls_TypeDef* - The created Object pointer
   */
-GL_PageControls_TypeDef* NewHistogram ( uint16_t ID, const uint8_t* labelX, const uint8_t* labelY, int16_t data_points[], uint8_t n_points )
+GL_PageControls_TypeDef* NewHistogram ( uint16_t ID, const uint8_t* labelX, const uint8_t* labelY, int16_t data_points[], uint16_t n_points )
 {
   GL_PageControls_TypeDef *pPageControlObj = NULL;
   GL_Histogram_TypeDef *pControlObj = NULL;
@@ -911,7 +911,7 @@ GL_PageControls_TypeDef* NewHistogram ( uint16_t ID, const uint8_t* labelX, cons
   *     @arg  GL_FALSE
   * @retval GL_PageControls_TypeDef* - The created Object pointer
   */
-GL_PageControls_TypeDef* NewGraphChart ( uint16_t ID, const uint8_t* labelX, const uint8_t* labelY, int16_t data_points[], uint8_t n_points, GL_bool Background )
+GL_PageControls_TypeDef* NewGraphChart ( uint16_t ID, const uint8_t* labelX, const uint8_t* labelY, int16_t data_points[], uint16_t n_points, GL_bool Background )
 {
   GL_PageControls_TypeDef *pPageControlObj = NULL;
   GL_GraphChart_TypeDef *pControlObj = NULL;
@@ -3161,7 +3161,7 @@ static GL_ErrStatus SetGraphChartVisible( GL_PageControls_TypeDef* pTmp, GL_Coor
   * @param  n_points: Number of points to be plot
   * @retval GL_ErrStatus - GL_OK if successful, GL_ERROR otherwise
   */
-GL_ErrStatus SetGraphChartPoints( GL_Page_TypeDef* pPage, uint16_t ID, int16_t data_points[], uint8_t n_points )
+GL_ErrStatus SetGraphChartPoints( GL_Page_TypeDef* pPage, uint16_t ID, int16_t data_points[], uint16_t n_points )
 {
   uint32_t index = 0;
   if (!pPage)
@@ -3209,7 +3209,7 @@ GL_ErrStatus SetGraphChartPoints( GL_Page_TypeDef* pPage, uint16_t ID, int16_t d
   * @param  n_points: Number of points to be plot
   * @retval GL_ErrStatus - GL_OK if successful, GL_ERROR otherwise
   */
-GL_ErrStatus SetHistogramPoints( GL_Page_TypeDef* pPage, uint16_t ID, int16_t data_points[], uint8_t n_points )
+GL_ErrStatus SetHistogramPoints( GL_Page_TypeDef* pPage, uint16_t ID, int16_t data_points[], uint16_t n_points )
 {
   uint32_t index = 0;
   if (!pPage)
@@ -3592,7 +3592,7 @@ GL_ErrStatus SetComboOptionLabel(GL_Page_TypeDef* pPage, uint16_t ID, const uint
   * @param  Height: Image Height
   * @retval GL_ErrStatus - GL_OK if successful, GL_ERROR otherwise
   */
-GL_ErrStatus SetIconImage(GL_Page_TypeDef* pPage, uint16_t ID, const uint8_t* pImage, uint16_t Width, uint8_t Height)
+GL_ErrStatus SetIconImage(GL_Page_TypeDef* pPage, uint16_t ID, const uint8_t* pImage, uint16_t Width, uint16_t Height)
 {
   uint32_t index = 0;
   if (!pPage)
@@ -4435,6 +4435,19 @@ static GL_ErrStatus SetNewRectControlVisible(GL_PageControls_TypeDef* pTmp, GL_C
   }
 	UARTprintf("in SetNewRectControlVisible Newrect\r\n");
   pThis->Control_Visible = GL_TRUE;
+	if (pThis->isObjectTouched == GL_FALSE)
+	{
+	
+	}
+	else if (pThis->isObjectTouched == GL_TRUE)
+	{
+		uint8_t i;
+		GL_SetTextColor(VU_YELLOW);
+		for (i = 0; i < 10; i++)
+		{
+			GL_DrawRectangle(objCoordinates.MaxX - i, objCoordinates.MinX - i, objCoordinates.MaxY - i, objCoordinates.MinY - i);
+		}
+	}		
 	UARTprintf("in SetNewRectControlVisible GL_TRUE Newrect\r\n");
   GL_SetFont(GL_FONT_BIG);
 	UARTprintf("in SetNewRectControlVisible GL_FONT_BIG Newrect\r\n");

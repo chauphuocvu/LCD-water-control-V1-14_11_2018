@@ -225,8 +225,8 @@ void GL_LCD_DisplayChar(uint16_t Line, uint16_t Column, uint8_t Ascii, GL_bool T
 void GL_DisplayAdjStringLine(uint16_t Line, uint16_t Column, uint8_t *ptr, GL_bool Transparent_Flag);
 void GL_SetDisplayWindow(uint16_t Xpos, uint16_t Ypos, uint16_t Height, uint16_t Width);
 void GL_DrawLine(uint16_t Xpos, uint16_t Ypos, uint16_t Length, uint8_t Direction);
-void GL_LCD_DrawRect(uint8_t Xpos, uint16_t Ypos, uint8_t Height, uint16_t Width);
-void GL_LCD_DrawCircle(uint8_t Xpos, uint16_t Ypos, uint16_t Radius);
+void GL_LCD_DrawRect(uint16_t Xpos, uint16_t Ypos, uint16_t Height, uint16_t Width);
+void GL_LCD_DrawCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius);
 void GL_DrawBMP(uint8_t* ptrBitmap);
 void GL_SetFont(uint8_t uFont);
 void GL_BackLightSwitch(uint8_t u8_State);
@@ -238,7 +238,7 @@ void GL_LCD_WindowModeDisable(void);
 void LCD_PutPixel(uint16_t Xpos, uint16_t Ypos, uint16_t Color, uint8_t PixelSpec);
 void LCD_FillArea(uint16_t Xpos_Init, uint16_t Ypos_Init, uint16_t Height, uint16_t Width, uint16_t color);
 uint16_t LCD_GetPixel(uint16_t Xpos, uint16_t Ypos);
-void GL_LCD_DrawChar(uint8_t Xpos, uint16_t Ypos, const uint16_t *c);
+void GL_LCD_DrawChar(uint16_t Xpos, uint16_t Ypos, const uint16_t *c);
 
 //void GL_LCD_CtrlLinesWrite(GPIO_TypeDef* GPIOx, uint16_t CtrlPins, GL_SignalActionType BitVal);
 //uint16_t GL_LCD_ReadRAM(void);
