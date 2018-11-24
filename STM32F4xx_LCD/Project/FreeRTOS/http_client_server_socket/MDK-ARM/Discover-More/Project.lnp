@@ -9,6 +9,7 @@
 ".\discover-more\httpclient-socket.o"
 ".\discover-more\miscellaneous.o"
 ".\discover-more\hw_config.o"
+".\discover-more\flash_memory_driver.o"
 ".\discover-more\pictures.o"
 ".\discover-more\uiappuser.o"
 ".\discover-more\uiframework.o"

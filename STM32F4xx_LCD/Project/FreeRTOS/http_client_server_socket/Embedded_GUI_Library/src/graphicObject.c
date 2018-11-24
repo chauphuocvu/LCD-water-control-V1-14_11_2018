@@ -611,11 +611,12 @@ GL_PageControls_TypeDef* AddRadioOption (GL_RadioButtonGrp_TypeDef* pThis, const
       Create_RadioButtonOption(pOptionObj);
 
       pThis->RadioOptions[pThis->RadioOptionCount] = pPageControlObj;
-      pThis->RadioOptionCount++;
-      if (pThis->RadioOptionCount == 1)
-      {
-        ((GL_RadioOption_TypeDef*)(pThis->RadioOptions[0]->objPTR))->IsChecked = GL_TRUE;
-      }
+			/*Added by Chau Phuoc Vu 23/11/2018*/
+			pThis->RadioOptionCount++;
+//      if (pThis->RadioOptionCount == 1)
+//      {
+//        ((GL_RadioOption_TypeDef*)(pThis->RadioOptions[0]->objPTR))->IsChecked = GL_TRUE;
+//      }
     }
     else
     {

@@ -37,8 +37,36 @@ extern GL_Page_TypeDef DosingTestStopStartScreen;
 extern GL_Page_TypeDef DosingTestStopStopScreen;
 extern GL_Page_TypeDef DosingTestStartStopScreen;
 extern GL_Page_TypeDef ParametersScreen;
-extern GL_Page_TypeDef ParametersPoolScreen;
 extern GL_Page_TypeDef ParametersPoolVolumeScreen;
+extern GL_Page_TypeDef ParametersFitrationPeriodScreen;
+extern GL_Page_TypeDef ParametersWaterScreen;
+
+
+
+/*Added by Chau Phuoc Vu 23/11/2018*/
+extern uint16_t		Screen;
+
+#define	StartScreen_df			1
+#define	SettingsScreen_df			2
+#define	DosingTestStartStartScreen_df			3
+#define	DosingTestStopStartScreen_df			4
+#define	DosingTestStopStopScreen_df			5
+#define	DosingTestStartStopScreen_df			6
+#define	ParametersScreen_df			7
+#define	ParametersPoolVolumeScreen_df			8
+#define	ParametersFitrationPeriodScreen_df			9
+#define	ParametersWaterScreen_df			10
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+#define	StartScreen_df			1
+
 /*Added by chau phuoc vu 14/11/2018*/
 void DelayScreen_Decrement(void);
 void DelayScreen(uint16_t time);

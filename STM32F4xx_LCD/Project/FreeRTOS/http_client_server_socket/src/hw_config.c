@@ -24,7 +24,8 @@
 #include "stdio.h"
 #include "stm32f4xx_rcc.h"
 #include "stm32f4xx_gpio.h"
-#include "stm32f4xx_flash.h"
+/*Added by Chau Phuoc Vu 22/11/2018*/
+//#include "stm32f4xx_flash.h"
 #include "stm32f4xx_exti.h"
 #include "stm32f4xx_tim.h"
 

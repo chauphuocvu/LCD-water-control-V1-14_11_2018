@@ -57,6 +57,7 @@
 #include "LcdHal.h"
 /////////////////////////////////////
 #include "uiappuser.h"
+#include "flash_memory_driver.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -81,10 +82,11 @@ void GPIO_Config(void);
 void MyTask(void * pvParameters);
 void vApplicationStackOverflowHook( TaskHandle_t xTask,
                                     signed char *pcTaskName );
-void CreateTask1(void * pvParameters);
+void DisplayArgument();
 void CreateTask2(void * pvParameters);
 void vApplicationTickHook( void );
-
+uint16_t datar = 0;
+extern uint16_t		Screen;
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -130,9 +132,10 @@ int main(void)
     
   /* Start toogleLed4 task : Toggle LED4  every 250ms */
 //	xTaskCreate(CreateTask1, "CreateTask1", configMINIMAL_STACK_SIZE*10, NULL, LED_TASK_PRIO, NULL);
-  //xTaskCreate(CreateTask2, "CreateTask2", configMINIMAL_STACK_SIZE*10, NULL, LED_TASK_PRIO, NULL);
 	xTaskCreate(MyTask, "MyTask", configMINIMAL_STACK_SIZE*20, NULL, LED_TASK_PRIO, NULL);
-  /* Start scheduler */
+ // xTaskCreate(DisplayArgument, "DisplayArgument", configMINIMAL_STACK_SIZE*10, NULL, LED_TASK_PRIO, NULL);
+
+	/* Start scheduler */
   vTaskStartScheduler();
   /* We should never get here as control is now taken by the scheduler */
   for ( ;; );
@@ -152,14 +155,67 @@ void MyTask(void * pvParameters)
 		/* Time out calculate for power saving mode */
     TimeOutCalculate();	
 //		touch_done = 0;
+		DisplayArgument();
   }
 }
-void CreateTask1(void * pvParameters)
+void DisplayArgument()
 {
-  for ( ;; ) {
-		USART_SendData(USART1, 0x30);
-		vTaskDelay(500);
-}
+		//UARTprintf("co chay Switch case\r\n");
+		switch(Screen)
+		{
+			case StartScreen_df:
+				LCD_SetColors(WHITE,BLACK);
+				LCD_SetFont(&Font12x12);
+				LCD_DisplayStringLine(20,130,(uint8_t *)"00:00:01");
+				LCD_SetColors(BLACK,VU_YELLOW);
+				LCD_SetFont(&Font16x24);
+				LCD_DisplayStringLine(130,100,(uint8_t *)"0.5");//hien thi Chlorine
+				LCD_SetFont(&Font12x12);
+				LCD_DisplayStringLine(80,170,(uint8_t *)"0.5");	
+				LCD_SetColors(BLACK,VU_BLUE);
+				LCD_SetFont(&Font16x24);
+				LCD_DisplayStringLine(130,330,(uint8_t *)"0.5");//hien thi pH
+				LCD_SetFont(&Font12x12);
+				LCD_DisplayStringLine(80,400,(uint8_t *)"0.5");		
+				break;
+			case SettingsScreen_df:
+				break;
+			case DosingTestStartStartScreen_df:
+			case DosingTestStopStartScreen_df:
+			case DosingTestStopStopScreen_df:
+			case DosingTestStartStopScreen_df:
+				LCD_SetColors(BLACK,VU_YELLOW);
+				LCD_SetFont(&Font16x24);
+				LCD_DisplayStringLine(120,100,(uint8_t *)"150");
+				LCD_SetFont(&Font12x12);
+				LCD_DisplayStringLine(70,165,(uint8_t *)"400ml");	
+				LCD_SetColors(BLACK,VU_BLUE);
+				LCD_SetFont(&Font16x24);
+				LCD_DisplayStringLine(120,330,(uint8_t *)"150");
+				LCD_SetFont(&Font12x12);
+				LCD_DisplayStringLine(70,400,(uint8_t *)"200ml");
+				break;
+			case ParametersScreen_df:
+				break;
+			case ParametersPoolVolumeScreen_df:
+				LCD_SetColors(WHITE,VU_ORANGE);
+				LCD_SetFont(&Font16x24);
+				LCD_DisplayStringLine(120,100,(uint8_t *)"15 m3");
+				LCD_SetColors(WHITE,VU_GRAY);
+				LCD_SetFont(&Font16x24);
+				LCD_DisplayStringLine(120,330,(uint8_t *)"06 h");
+				break;
+			case ParametersFitrationPeriodScreen_df:
+					LCD_SetColors(WHITE,VU_GRAY);
+					LCD_SetFont(&Font16x24);
+					LCD_DisplayStringLine(120,100,(uint8_t *)"15 m3");
+					LCD_SetColors(WHITE,VU_ORANGE);
+					LCD_SetFont(&Font16x24);
+					LCD_DisplayStringLine(120,330,(uint8_t *)"06 h");
+				break;
+			case ParametersWaterScreen_df:
+				break;
+		}
 }
 void CreateTask2(void * pvParameters)
 {

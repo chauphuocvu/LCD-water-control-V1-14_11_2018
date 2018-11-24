@@ -1,5 +1,5 @@
 Dependencies for Project 'Project', Target 'Discover-More': (DO NOT MODIFY !)
-F (..\src\main.c)(0x5BF4EFF0)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\main.o --omf_browse .\discover-more\main.crf --depend .\discover-more\main.d)
+F (..\src\main.c)(0x5BF7CF49)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\main.o --omf_browse .\discover-more\main.crf --depend .\discover-more\main.d)
 I (..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc\stm32f4x7_eth.h)(0x50E8E284)
 I (..\inc\stm32f4x7_eth_conf.h)(0x50E8E27A)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5BEBFC6B)
@@ -9,7 +9,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -87,9 +87,10 @@ I (..\STM32F4Discovery\stm32f4_discovery_tsc2046.h)(0x58F5DD24)
 I (..\Embedded_GUI_Library\inc\graphicObject.h)(0x5BEE8AB6)
 I (..\Embedded_GUI_Library\inc\graphicObjectTypes.h)(0x5BEE8AB6)
 I (..\Embedded_GUI_HAL\inc\stm32HAL.h)(0x5901D425)
-I (..\GUIlib\inc\uiframework.h)(0x5BF4EAF2)
+I (..\GUIlib\inc\uiframework.h)(0x5BF7C5B5)
 I (..\Embedded_GUI_HAL\inc\LcdHal.h)(0x5BD19FBD)
 I (..\GUIlib\inc\uiappuser.h)(0x5BF3B1F3)
+I (..\MDK-ARM\flash_memory_driver.h)(0x5BF7CD49)
 F (..\src\system_stm32f4xx.c)(0x58F5D409)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\system_stm32f4xx.o --omf_browse .\discover-more\system_stm32f4xx.crf --depend .\discover-more\system_stm32f4xx.d)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5BEBFC6B)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x50E8E284)
@@ -98,7 +99,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -134,7 +135,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -223,7 +224,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -288,7 +289,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -376,7 +377,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -444,7 +445,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -480,7 +481,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -507,7 +508,7 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x50E8E
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x50E8E282)
-F (..\src\hw_config.c)(0x58E21CE8)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\hw_config.o --omf_browse .\discover-more\hw_config.crf --depend .\discover-more\hw_config.d)
+F (..\src\hw_config.c)(0x5BF675FF)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\hw_config.o --omf_browse .\discover-more\hw_config.crf --depend .\discover-more\hw_config.d)
 I (..\inc\hw_config.h)(0x58CA483C)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5BEBFC6B)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x50E8E284)
@@ -516,7 +517,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -545,9 +546,46 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x50E8
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x50E8E282)
 I (D:\WINDOW\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\WINDOW\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
+F (.\flash_memory_driver.c)(0x5BF7A85B)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\flash_memory_driver.o --omf_browse .\discover-more\flash_memory_driver.crf --depend .\discover-more\flash_memory_driver.d)
+I (flash_memory_driver.h)(0x5BF7CD49)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x50E8E282)
+I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5BEBFC6B)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x50E8E284)
+I (D:\WINDOW\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
+I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
+I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x50E8E282)
+I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x50E8E282)
+F (.\flash_memory_driver.h)(0x5BF7CD49)()
 F (..\GUIlib\src\pictures.c)(0x59001A05)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\pictures.o --omf_browse .\discover-more\pictures.crf --depend .\discover-more\pictures.d)
 F (..\GUIlib\src\uiappuser.c)(0x5BF51FB2)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\uiappuser.o --omf_browse .\discover-more\uiappuser.crf --depend .\discover-more\uiappuser.d)
-I (..\GUIlib\inc\uiframework.h)(0x5BF4EAF2)
+I (..\GUIlib\inc\uiframework.h)(0x5BF7C5B5)
 I (..\Embedded_GUI_Library\inc\graphicObjectTypes.h)(0x5BEE8AB6)
 I (..\Embedded_GUI_HAL\inc\stm32HAL.h)(0x5901D425)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5BEBFC6B)
@@ -557,7 +595,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -605,8 +643,8 @@ I (..\inc\stm32f4xx_uartstdio.h)(0x571D7A6A)
 I (D:\WINDOW\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599EDB3A)
 I (D:\WINDOW\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\inc\SSD1963_CMD.h)(0x58D48BB4)
-F (..\GUIlib\src\uiframework.c)(0x5BF52EE3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\uiframework.o --omf_browse .\discover-more\uiframework.crf --depend .\discover-more\uiframework.d)
-I (..\GUIlib\inc\uiframework.h)(0x5BF4EAF2)
+F (..\GUIlib\src\uiframework.c)(0x5BF7D19D)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\uiframework.o --omf_browse .\discover-more\uiframework.crf --depend .\discover-more\uiframework.d)
+I (..\GUIlib\inc\uiframework.h)(0x5BF7C5B5)
 I (..\Embedded_GUI_Library\inc\graphicObjectTypes.h)(0x5BEE8AB6)
 I (..\Embedded_GUI_HAL\inc\stm32HAL.h)(0x5901D425)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5BEBFC6B)
@@ -616,7 +654,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -679,7 +717,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -737,7 +775,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -788,7 +826,7 @@ I (..\Embedded_GUI_Library\inc\graphicObject.h)(0x5BEE8AB6)
 F (..\Embedded_GUI_Library\src\gl_fonts.c)(0x5BDB3567)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\gl_fonts.o --omf_browse .\discover-more\gl_fonts.crf --depend .\discover-more\gl_fonts.d)
 I (..\Embedded_GUI_Library\inc\gl_fonts.h)(0x5BDB2E51)
 I (D:\WINDOW\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-F (..\Embedded_GUI_Library\src\graphicObject.c)(0x5BF51C43)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\graphicobject.o --omf_browse .\discover-more\graphicobject.crf --depend .\discover-more\graphicobject.d)
+F (..\Embedded_GUI_Library\src\graphicObject.c)(0x5BF7D1EC)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\graphicobject.o --omf_browse .\discover-more\graphicobject.crf --depend .\discover-more\graphicobject.d)
 I (..\Embedded_GUI_Library\inc\graphicObject.h)(0x5BEE8AB6)
 I (..\Embedded_GUI_Library\inc\graphicObjectTypes.h)(0x5BEE8AB6)
 I (..\Embedded_GUI_HAL\inc\stm32HAL.h)(0x5901D425)
@@ -799,7 +837,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -863,7 +901,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -910,7 +948,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -948,7 +986,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -984,7 +1022,7 @@ I (..\inc\SSD1963_CMD.h)(0x58D48BB4)
 F (..\STM32F4Discovery\fonts.c)(0x5BE53B04)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\fonts.o --omf_browse .\discover-more\fonts.crf --depend .\discover-more\fonts.d)
 I (..\STM32F4Discovery\fonts.h)(0x5BE53B64)
 I (D:\WINDOW\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-F (..\STM32F4Discovery\stm32f4_discovery_tsc2046.c)(0x5BEE423A)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\stm32f4_discovery_tsc2046.o --omf_browse .\discover-more\stm32f4_discovery_tsc2046.crf --depend .\discover-more\stm32f4_discovery_tsc2046.d)
+F (..\STM32F4Discovery\stm32f4_discovery_tsc2046.c)(0x5BF79F4B)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\inc -I ..\src -I ..\..\..\..\Libraries\CMSIS\Include -I ..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\..\..\Libraries\STM32F4x7_ETH_Driver\inc -I ..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\ipv4 -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\lwip -I ..\..\..\..\Utilities\lwip_v1.3.2\src\include\netif -I ..\..\..\..\Utilities\lwip_v1.3.2\port\STM32F4x7\FreeRTOS -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\include -I ..\..\..\..\Utilities\FreeRTOSv9.0.0\portable\RVDS\ARM_CM4F -I ..\STM32F4Discovery -I ..\GUIlib\inc -I ..\Embedded_GUI_HAL\inc -I ..\Embedded_GUI_Library\inc -I ..\MDK-ARM-I.\RTE\_Discover-More-ID:\WINDOW\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\WINDOW\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_BRD-o .\discover-more\stm32f4_discovery_tsc2046.o --omf_browse .\discover-more\stm32f4_discovery_tsc2046.crf --depend .\discover-more\stm32f4_discovery_tsc2046.d)
 I (..\STM32F4Discovery\stm32f4_discovery_tsc2046.h)(0x58F5DD24)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5BEBFC6B)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4.h)(0x50E8E284)
@@ -993,7 +1031,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1049,7 +1087,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1085,7 +1123,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1120,7 +1158,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1155,7 +1193,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x50E8E282)
@@ -1190,7 +1228,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1225,7 +1263,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1260,7 +1298,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1295,7 +1333,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1330,7 +1368,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1365,7 +1403,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1400,7 +1438,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1435,7 +1473,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1470,7 +1508,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1505,7 +1543,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -1541,7 +1579,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)
@@ -2495,7 +2533,7 @@ I (..\..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Include\core_cm4_simd.h)(0x50E8E284)
 I (..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x50E8E284)
-I (..\inc\stm32f4xx_conf.h)(0x58C25D6C)
+I (..\inc\stm32f4xx_conf.h)(0x5BF678B5)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x50E8E282)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x4EAA220A)

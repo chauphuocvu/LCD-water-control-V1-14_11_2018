@@ -431,6 +431,16 @@
               <FileType>1</FileType>
               <FilePath>..\src\hw_config.c</FilePath>
             </File>
+            <File>
+              <FileName>flash_memory_driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\flash_memory_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash_memory_driver.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\flash_memory_driver.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -27,6 +27,7 @@
 
 
 GL_Page_TypeDef *CurrentScreen;
+uint16_t		Screen = 0;
 
 /** @addtogroup Embedded_GUI_Example
   * @{
@@ -48,9 +49,7 @@ void Show_HomeScreen(void)
 	Show_StartScreen();
 }
 
-/**
-  * @}
-  */
+
 /*Giao dien tu thiet ke*/
 GL_Page_TypeDef StartScreen;
 void Create_StartScreen(void)
@@ -69,34 +68,26 @@ void Show_StartScreen(void)
 	LCD_DrawFullRect(250,240,210,32,WHITE);//ve nut button
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLineInRect(250,240,210,32,(uint8_t *)"SETTINGS");
-	//LCD_SetColors(BLACK,WHITE);
-	//LCD_DisplayStringLine(250,300,(uint8_t *)"SETTINGS");
 	LCD_DrawFullRect(20,12,90,28,WHITE);
 	LCD_SetFont(&Font16x24);
 	LCD_SetColors(BLACK,WHITE);
 	LCD_DisplayStringLine(14,20,(uint8_t *)"TITLE");
 	LCD_SetColors(WHITE,BLACK);
 	LCD_SetFont(&Font12x12);
-	LCD_DisplayStringLine(20,130,(uint8_t *)"00:00:01");
 	LCD_DisplayStringLine(20,290,(uint8_t *)"CHAU PHUOC VU");
 	LCD_DisplayStringLine(250,20,(uint8_t *)"BACH KHOA");
 	LCD_DrawFullRect(20,60,210,160,VU_YELLOW);
 	LCD_DrawFullRect(250,60,210,160,VU_BLUE);
 	LCD_SetColors(BLACK,VU_YELLOW);
-	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(130,100,(uint8_t *)"0.5");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(80,30,(uint8_t *)"CHLORINE");
-	LCD_DisplayStringLine(80,170,(uint8_t *)"0.5");	
 	LCD_DisplayStringLine(160,175,(uint8_t *)"mg/l");
 	LCD_SetColors(BLACK,VU_BLUE);
-	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(130,330,(uint8_t *)"0.5");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(80,260,(uint8_t *)"PH--");
-	LCD_DisplayStringLine(80,400,(uint8_t *)"0.5");	
-	LCD_DisplayStringLine(175,400,(uint8_t *)"pH");	
+	LCD_DisplayStringLine(160,400,(uint8_t *)"pH");	
 	StartScreen.ShowPage(&StartScreen,GL_TRUE);
+	Screen = StartScreen_df;
 	CurrentScreen = &StartScreen;
 }
 /*Giao dien tu thiet ke*/
@@ -130,8 +121,7 @@ void Show_SettingsScreen(void)
 	LCD_DisplayStringLine(14,20,(uint8_t *)"TITLE");
 	LCD_SetColors(WHITE,BLACK);
 	LCD_SetFont(&Font12x12);
-	LCD_DisplayStringLine(20,380,(uint8_t *)"SETTINGS");
-	//LCD_DisplayStringLine(250,20,(uint8_t *)"BACH KHOA");
+	LCD_DisplayStringLine(20,380,(uint8_t *)"SETTINGS");;
 	LCD_DrawRect(20,60,80,210);
 	LCD_DrawRect(250,60,80,210);
 	LCD_DrawRect(20,150,80,210);
@@ -148,6 +138,7 @@ void Show_SettingsScreen(void)
 	LCD_SetColors(BLACK,WHITE);
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");
 	SettingsScreen.ShowPage(&SettingsScreen,GL_TRUE);
+	Screen = SettingsScreen_df;
 	CurrentScreen = &SettingsScreen;
 }
 
@@ -186,18 +177,12 @@ void Show_DosingTestStartStartScreen(void)
 	LCD_DrawFullRect(20,60,210,100,VU_YELLOW);
 	LCD_DrawFullRect(250,60,210,100,VU_BLUE);
 	LCD_SetColors(BLACK,VU_YELLOW);
-	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(120,100,(uint8_t *)"150");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(70,30,(uint8_t *)"DISINF.");
-	LCD_DisplayStringLine(70,165,(uint8_t *)"400ml");	
 	LCD_DisplayStringLine(127,155,(uint8_t *)"ml");
 	LCD_SetColors(BLACK,VU_BLUE);
-	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(120,330,(uint8_t *)"150");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(70,260,(uint8_t *)"pH");
-	LCD_DisplayStringLine(70,400,(uint8_t *)"200ml");	
 	LCD_DisplayStringLine(127,385,(uint8_t *)"ml");
 	LCD_DrawFullRect(20,240,210,30,WHITE);
 	LCD_DrawFullRect(250,240,210,30,WHITE);
@@ -213,6 +198,7 @@ void Show_DosingTestStartStartScreen(void)
 	LCD_DisplayStringLineInRect(250,240,210,30,(uint8_t *)"BACK");
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");
 	DosingTestStartStartScreen.ShowPage(&DosingTestStartStartScreen,GL_TRUE);
+	Screen = DosingTestStartStartScreen_df;
 	CurrentScreen = &DosingTestStartStartScreen;
 }
 
@@ -278,6 +264,7 @@ void Show_DosingTestStopStartScreen(void)
 	LCD_DisplayStringLineInRect(250,240,210,30,(uint8_t *)"BACK");
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");
 	DosingTestStopStartScreen.ShowPage(&DosingTestStopStartScreen,GL_TRUE);
+	Screen = DosingTestStopStartScreen_df;
 	CurrentScreen = &DosingTestStopStartScreen;
 }
 
@@ -343,6 +330,7 @@ void Show_DosingTestStopStopScreen(void)
 	LCD_DisplayStringLineInRect(250,240,210,30,(uint8_t *)"BACK");
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");
 	DosingTestStopStopScreen.ShowPage(&DosingTestStopStopScreen,GL_TRUE);
+	Screen = DosingTestStopStopScreen_df;
 	CurrentScreen = &DosingTestStopStopScreen;
 }
 
@@ -409,6 +397,7 @@ void Show_DosingTestStartStopScreen(void)
 	LCD_DisplayStringLineInRect(250,240,210,30,(uint8_t *)"BACK");
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");
 	DosingTestStartStopScreen.ShowPage(&DosingTestStartStopScreen,GL_TRUE);
+	Screen = DosingTestStartStopScreen_df;
 	CurrentScreen = &DosingTestStartStopScreen;
 }
 
@@ -465,6 +454,7 @@ void Show_ParametersScreen(void)
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");
 	LCD_SetColors(BLACK,WHITE);
 	ParametersScreen.ShowPage(&ParametersScreen,GL_TRUE);
+	Screen = ParametersScreen_df;
 	CurrentScreen = &ParametersScreen;
 }
 
@@ -506,16 +496,14 @@ void Show_ParametersPoolVolumeScreen(void)
 	LCD_DrawFullRect(250,60,210,100,VU_GRAY);
 	LCD_SetColors(WHITE,VU_ORANGE);
 	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(120,100,(uint8_t *)"15");
+	LCD_DisplayStringLine(120,100,(uint8_t *)"15 m3");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(70,30,(uint8_t *)"POOL VOLUME");
-	LCD_DisplayStringLine(127,155,(uint8_t *)"m3");
 	LCD_SetColors(WHITE,VU_GRAY);
 	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(120,330,(uint8_t *)"06");
+	LCD_DisplayStringLine(120,330,(uint8_t *)"06 h");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(70,255,(uint8_t *)"FILTRATION PERIOD");
-	LCD_DisplayStringLine(127,385,(uint8_t *)"h");
 	LCD_DrawFullRect(20,240,210,30,WHITE);
 	LCD_DrawFullRect(250,240,210,30,WHITE);
 	LCD_SetTextColor(WHITE);
@@ -533,6 +521,7 @@ void Show_ParametersPoolVolumeScreen(void)
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");	
 	LCD_SetColors(BLACK,WHITE);
 	ParametersPoolVolumeScreen.ShowPage(&ParametersPoolVolumeScreen,GL_TRUE);
+	Screen = ParametersPoolVolumeScreen_df;
 	CurrentScreen = &ParametersPoolVolumeScreen;
 }
 
@@ -573,16 +562,14 @@ void Show_ParametersFitrationPeriodScreen(void)
 	LCD_DrawFullRect(250,60,210,100,VU_ORANGE);
 	LCD_SetColors(WHITE,VU_GRAY);
 	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(120,100,(uint8_t *)"15");
+	LCD_DisplayStringLine(120,100,(uint8_t *)"15 m3");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(70,30,(uint8_t *)"POOL VOLUME");
-	LCD_DisplayStringLine(127,155,(uint8_t *)"m3");
 	LCD_SetColors(WHITE,VU_ORANGE);
 	LCD_SetFont(&Font16x24);
-	LCD_DisplayStringLine(120,330,(uint8_t *)"06");
+	LCD_DisplayStringLine(120,330,(uint8_t *)"06 h");
 	LCD_SetFont(&Font12x12);
 	LCD_DisplayStringLine(70,255,(uint8_t *)"FILTRATION PERIOD");
-	LCD_DisplayStringLine(127,385,(uint8_t *)"h");
 	LCD_DrawFullRect(20,240,210,30,WHITE);
 	LCD_DrawFullRect(250,240,210,30,WHITE);
 	LCD_SetTextColor(WHITE);
@@ -600,6 +587,7 @@ void Show_ParametersFitrationPeriodScreen(void)
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");	
 	LCD_SetColors(BLACK,WHITE);
 	ParametersFitrationPeriodScreen.ShowPage(&ParametersFitrationPeriodScreen,GL_TRUE);
+	Screen = ParametersFitrationPeriodScreen_df;
 	CurrentScreen = &ParametersFitrationPeriodScreen;
 }
 
@@ -636,11 +624,12 @@ void Create_ParametersWaterScreen(void)
 	AddPageControlObj(270,205,CheckBoxSoft,&ParametersWaterScreen);
 	AddPageControlObj(340,205,CheckBoxHard,&ParametersWaterScreen);
 	AddPageControlObj(410,205,CheckBoxVeryHard,&ParametersWaterScreen);
-//	GL_RadioOption_TypeDef* pTmp = (GL_RadioOption_TypeDef*)(ParametersWaterScreen);
+//  GL_RadioOption_TypeDef* pTmp = (GL_RadioOption_TypeDef*)(ParametersWaterScreen);
 //	pTmp->IsChecked = GL_TRUE;
 //	(Pool->RadioOptionCount) = 0;
-
-//	((GL_RadioOption_TypeDef*)(Pool->RadioOptions[2]->objPTR))->IsChecked = GL_TRUE;
+	((GL_RadioOption_TypeDef*)(Pool->RadioOptions[2]->objPTR))->IsChecked = GL_TRUE;
+	((GL_RadioOption_TypeDef*)(AverageWaterTemperature->RadioOptions[2]->objPTR))->IsChecked = GL_TRUE;
+	((GL_RadioOption_TypeDef*)(WaterHardness->RadioOptions[0]->objPTR))->IsChecked = GL_TRUE;
 }
 ////////////////////////////////////////
 void Show_ParametersWaterScreen(void)
@@ -681,6 +670,7 @@ void Show_ParametersWaterScreen(void)
 	LCD_DisplayStringLineInRect(20,240,210,30,(uint8_t *)"BACK TO START");	
 	LCD_SetColors(BLACK,WHITE);
 	ParametersWaterScreen.ShowPage(&ParametersWaterScreen,GL_TRUE);
+	Screen = ParametersWaterScreen_df;
 	CurrentScreen = &ParametersWaterScreen;
 }
 
